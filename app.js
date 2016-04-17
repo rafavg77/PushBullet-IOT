@@ -1,9 +1,10 @@
 var PushBullet = require('pushbullet');
-var pusher = new PushBullet('API-KEY');
+var pusher = new PushBullet('o.huZSx6x953specUAdaD03EFnoCDBU1BF');
 var request = require("request");
 var stream = pusher.stream();
 var device = 'Domotic Pi';
-var url = 'PUT HERE DOMOTIC URL';
+var url = 'http://192.168.0.250:3000/api/red/';
+
 
 function notify(pusher,device,message){
   pusher.note('', device, message, function(error, response) {

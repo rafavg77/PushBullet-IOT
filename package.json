@@ -1,0 +1,29 @@
+{
+  "name": "pushbullet-iot",
+  "version": "1.0.0",
+  "description": "Hack para usar pushbullet para IOT",
+  "main": "app.js",
+  "dependencies": {
+    "pushbullet": "^1.4.3",
+    "request": "^2.71.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafavg77/PushBullet-IOT.git"
+  },
+  "keywords": [
+    "IOT",
+    "pushbullet",
+    "IOT"
+  ],
+  "author": "@rafavg77",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafavg77/PushBullet-IOT/issues"
+  },
+  "homepage": "https://github.com/rafavg77/PushBullet-IOT#readme"
+}
