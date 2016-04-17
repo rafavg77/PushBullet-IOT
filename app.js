@@ -1,5 +1,5 @@
 var PushBullet = require('pushbullet');
-var pusher = new PushBullet('o.huZSx6x953specUAdaD03EFnoCDBU1BF');
+var pusher = new PushBullet('');
 var request = require("request");
 var stream = pusher.stream();
 var device = 'Domotic Pi';
