@@ -1,0 +1,21 @@
+#put this file on /etc/systemd/system/pushbullet_iot.service
+#run sudo systemctl enable pushbullet_iot.service
+#and sudo systemctl start pushbullet_iot.service
+#and sudo systemctl status pushbullet_iot.service
+#enjoy :D
+
+[Unit]
+Description=Pushbullet Service for Iot by Tota77
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/nodejs /home/pi/scripts/domotic/PushBullet-IOT/app.js
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=nodejs-pushbullet_iot
+#Environment=
+
+[Install]
+WantedBy=multi-user.target
